@@ -14,6 +14,8 @@
 		46992F4E29557ADA00BA442B /* BearMinimumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F4D29557ADA00BA442B /* BearMinimumTests.swift */; };
 		46992F5829557ADA00BA442B /* BearMinimumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F5729557ADA00BA442B /* BearMinimumUITests.swift */; };
 		46992F5A29557ADA00BA442B /* BearMinimumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F5929557ADA00BA442B /* BearMinimumUITestsLaunchTests.swift */; };
+		46992F672955800A00BA442B /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F662955800A00BA442B /* TaskListView.swift */; };
+		46992F692955804A00BA442B /* BearImageCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F682955804A00BA442B /* BearImageCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		46992F5329557ADA00BA442B /* BearMinimumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BearMinimumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46992F5729557ADA00BA442B /* BearMinimumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearMinimumUITests.swift; sourceTree = "<group>"; };
 		46992F5929557ADA00BA442B /* BearMinimumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearMinimumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		46992F662955800A00BA442B /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		46992F682955804A00BA442B /* BearImageCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearImageCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				46992F3C29557AD700BA442B /* BearMinimumApp.swift */,
 				46992F3E29557AD700BA442B /* ContentView.swift */,
+				46992F682955804A00BA442B /* BearImageCircle.swift */,
+				46992F662955800A00BA442B /* TaskListView.swift */,
 				46992F4029557ADA00BA442B /* Assets.xcassets */,
 				46992F4229557ADA00BA442B /* Preview Content */,
 			);
@@ -259,6 +265,8 @@
 			files = (
 				46992F3F29557AD700BA442B /* ContentView.swift in Sources */,
 				46992F3D29557AD700BA442B /* BearMinimumApp.swift in Sources */,
+				46992F672955800A00BA442B /* TaskListView.swift in Sources */,
+				46992F692955804A00BA442B /* BearImageCircle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
