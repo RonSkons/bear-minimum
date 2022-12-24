@@ -11,11 +11,10 @@
 		46992F3F29557AD700BA442B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F3E29557AD700BA442B /* ContentView.swift */; };
 		46992F4129557ADA00BA442B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46992F4029557ADA00BA442B /* Assets.xcassets */; };
 		46992F4429557ADA00BA442B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46992F4329557ADA00BA442B /* Preview Assets.xcassets */; };
-		46992F4E29557ADA00BA442B /* BearMinimumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F4D29557ADA00BA442B /* BearMinimumTests.swift */; };
-		46992F5829557ADA00BA442B /* BearMinimumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F5729557ADA00BA442B /* BearMinimumUITests.swift */; };
-		46992F5A29557ADA00BA442B /* BearMinimumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F5929557ADA00BA442B /* BearMinimumUITestsLaunchTests.swift */; };
 		46992F672955800A00BA442B /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F662955800A00BA442B /* TaskListView.swift */; };
 		46992F692955804A00BA442B /* BearImageCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F682955804A00BA442B /* BearImageCircle.swift */; };
+		46FF13892955AA7E006731FB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF13882955AA7E006731FB /* Task.swift */; };
+		46FF138B2955AAFC006731FB /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF138A2955AAFC006731FB /* TaskManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +41,11 @@
 		46992F4029557ADA00BA442B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46992F4329557ADA00BA442B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		46992F4929557ADA00BA442B /* BearMinimumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BearMinimumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		46992F4D29557ADA00BA442B /* BearMinimumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearMinimumTests.swift; sourceTree = "<group>"; };
 		46992F5329557ADA00BA442B /* BearMinimumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BearMinimumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		46992F5729557ADA00BA442B /* BearMinimumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearMinimumUITests.swift; sourceTree = "<group>"; };
-		46992F5929557ADA00BA442B /* BearMinimumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearMinimumUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		46992F662955800A00BA442B /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		46992F682955804A00BA442B /* BearImageCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearImageCircle.swift; sourceTree = "<group>"; };
+		46FF13882955AA7E006731FB /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		46FF138A2955AAFC006731FB /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				46992F3B29557AD700BA442B /* BearMinimum */,
-				46992F4C29557ADA00BA442B /* BearMinimumTests */,
-				46992F5629557ADA00BA442B /* BearMinimumUITests */,
 				46992F3A29557AD700BA442B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +94,7 @@
 		46992F3B29557AD700BA442B /* BearMinimum */ = {
 			isa = PBXGroup;
 			children = (
+				46FF13872955AA45006731FB /* Model */,
 				46992F3C29557AD700BA442B /* BearMinimumApp.swift */,
 				46992F3E29557AD700BA442B /* ContentView.swift */,
 				46992F682955804A00BA442B /* BearImageCircle.swift */,
@@ -116,21 +113,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		46992F4C29557ADA00BA442B /* BearMinimumTests */ = {
+		46FF13872955AA45006731FB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				46992F4D29557ADA00BA442B /* BearMinimumTests.swift */,
+				46FF13882955AA7E006731FB /* Task.swift */,
+				46FF138A2955AAFC006731FB /* TaskManager.swift */,
 			);
-			path = BearMinimumTests;
-			sourceTree = "<group>";
-		};
-		46992F5629557ADA00BA442B /* BearMinimumUITests */ = {
-			isa = PBXGroup;
-			children = (
-				46992F5729557ADA00BA442B /* BearMinimumUITests.swift */,
-				46992F5929557ADA00BA442B /* BearMinimumUITestsLaunchTests.swift */,
-			);
-			path = BearMinimumUITests;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +252,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FF138B2955AAFC006731FB /* TaskManager.swift in Sources */,
 				46992F3F29557AD700BA442B /* ContentView.swift in Sources */,
 				46992F3D29557AD700BA442B /* BearMinimumApp.swift in Sources */,
 				46992F672955800A00BA442B /* TaskListView.swift in Sources */,
+				46FF13892955AA7E006731FB /* Task.swift in Sources */,
 				46992F692955804A00BA442B /* BearImageCircle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46992F4E29557ADA00BA442B /* BearMinimumTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +272,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46992F5829557ADA00BA442B /* BearMinimumUITests.swift in Sources */,
-				46992F5A29557ADA00BA442B /* BearMinimumUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
