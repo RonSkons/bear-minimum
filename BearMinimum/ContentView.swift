@@ -24,7 +24,7 @@ struct ContentView: View {
             HStack {
                 BearImageCircle()
                 Text("Bear Minimum")
-                    .font(.title).padding()
+                    .font(Font.custom("JosefinSans-Medium", size: 35)).padding()
             }
             
             Text("Daily Tasks:").font(.title2)
@@ -34,7 +34,7 @@ struct ContentView: View {
             // Task list
             ScrollView {
                 ForEach($tasks) { $task in
-                    Toggle(task.id, isOn: $task.isComplete).padding().tint(.yellow)
+                    Toggle(task.id, isOn: $task.isComplete).padding().tint(.accentColor)
                         .onChange(of: task.isComplete) { value in
                             TaskManager.save()
                             
@@ -65,10 +65,10 @@ struct ContentView: View {
             Text("Current Streak: " + String(dayCount) + " days.")
                 .padding()
                 .font(.system(size: 20, weight: .bold, design: .default))
-                .confettiCannon(counter: $dayCount, num: 130, colors: [.orange, .yellow, .white, .brown], rainHeight: 1500, radius: 550)
+                .confettiCannon(counter: $dayCount, num: 130, colors: [.orange, .accentColor, .white, .brown], rainHeight: 1500, radius: 550)
             Spacer()
         }
-        .background(completeStatus ? .yellow.opacity(0.35) : .white) // Fade to yellow when all tasks are done
+        .background(completeStatus ? Color.accentColor.opacity(0.35) : .white) // Fade to yellow when all tasks are done
         .animation(.easeInOut, value: completeStatus)
         .onAppear(){
             // Initialize audio players

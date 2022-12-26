@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		46992F3D29557AD700BA442B /* BearMinimumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F3C29557AD700BA442B /* BearMinimumApp.swift */; };
-		46992F3F29557AD700BA442B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F3E29557AD700BA442B /* ContentView.swift */; };
 		46992F4129557ADA00BA442B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46992F4029557ADA00BA442B /* Assets.xcassets */; };
 		46992F4429557ADA00BA442B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46992F4329557ADA00BA442B /* Preview Assets.xcassets */; };
 		46992F692955804A00BA442B /* BearImageCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F682955804A00BA442B /* BearImageCircle.swift */; };
 		46B405AF29596B230071133D /* Yipee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46B405AD29596B230071133D /* Yipee.mp3 */; };
 		46B405B1295ABD550071133D /* Success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46B405B0295ABD550071133D /* Success.mp3 */; };
 		46F850AF29599452001AB6FB /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 46F850AE29599452001AB6FB /* ConfettiSwiftUI */; };
+		46F850C12959A24A001AB6FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F3E29557AD700BA442B /* ContentView.swift */; };
+		46F850C32959A2A5001AB6FB /* JosefinSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46F850C22959A2A5001AB6FB /* JosefinSans-Medium.ttf */; };
 		46FF13892955AA7E006731FB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF13882955AA7E006731FB /* Task.swift */; };
 		46FF138B2955AAFC006731FB /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF138A2955AAFC006731FB /* TaskManager.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,8 @@
 		46992F682955804A00BA442B /* BearImageCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearImageCircle.swift; sourceTree = "<group>"; };
 		46B405AD29596B230071133D /* Yipee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Yipee.mp3; path = ../../../../Downloads/Yipee.mp3; sourceTree = "<group>"; };
 		46B405B0295ABD550071133D /* Success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Success.mp3; path = ../../../../Downloads/Success.mp3; sourceTree = "<group>"; };
+		46F850BE2959A084001AB6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		46F850C22959A2A5001AB6FB /* JosefinSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Medium.ttf"; sourceTree = "<group>"; };
 		46FF13882955AA7E006731FB /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		46FF138A2955AAFC006731FB /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +101,8 @@
 		46992F3B29557AD700BA442B /* BearMinimum */ = {
 			isa = PBXGroup;
 			children = (
+				46F850BE2959A084001AB6FB /* Info.plist */,
+				46F850B92959A039001AB6FB /* Fonts */,
 				46B405B0295ABD550071133D /* Success.mp3 */,
 				46B405AD29596B230071133D /* Yipee.mp3 */,
 				46FF13872955AA45006731FB /* Model */,
@@ -116,6 +121,14 @@
 				46992F4329557ADA00BA442B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		46F850B92959A039001AB6FB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				46F850C22959A2A5001AB6FB /* JosefinSans-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		46FF13872955AA45006731FB /* Model */ = {
@@ -240,6 +253,7 @@
 				46B405AF29596B230071133D /* Yipee.mp3 in Resources */,
 				46992F4429557ADA00BA442B /* Preview Assets.xcassets in Resources */,
 				46B405B1295ABD550071133D /* Success.mp3 in Resources */,
+				46F850C32959A2A5001AB6FB /* JosefinSans-Medium.ttf in Resources */,
 				46992F4129557ADA00BA442B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46FF138B2955AAFC006731FB /* TaskManager.swift in Sources */,
-				46992F3F29557AD700BA442B /* ContentView.swift in Sources */,
+				46F850C12959A24A001AB6FB /* ContentView.swift in Sources */,
 				46992F3D29557AD700BA442B /* BearMinimumApp.swift in Sources */,
 				46FF13892955AA7E006731FB /* Task.swift in Sources */,
 				46992F692955804A00BA442B /* BearImageCircle.swift in Sources */,
@@ -428,6 +442,7 @@
 				DEVELOPMENT_TEAM = AQY6ZVQPPM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BearMinimum/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -460,6 +475,7 @@
 				DEVELOPMENT_TEAM = AQY6ZVQPPM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BearMinimum/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -14,6 +14,14 @@ struct BearMinimumApp: App {
         let defaults = UserDefaults.standard
         TaskManager.load()
         
+        for family in UIFont.familyNames {
+                 print(family)
+
+                 for names in UIFont.fontNames(forFamilyName: family){
+                 print("== \(names)")
+                 }
+            }
+        
         // Initialize UserDefaults if they do not exist
         if (TaskManager.tasks.isEmpty) {
             TaskManager.tasks = [
