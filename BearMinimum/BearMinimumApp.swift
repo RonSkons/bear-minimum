@@ -35,9 +35,6 @@ struct BearMinimumApp: App {
                 defaults.set(0, forKey: "CurrentStreak")
             }
         }
-        
-        
-       
     }
     
     var body: some Scene {
