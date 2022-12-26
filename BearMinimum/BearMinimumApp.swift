@@ -20,8 +20,8 @@ struct BearMinimumApp: App {
                 Task(id: "Breakfast"),
                 Task(id: "Lunch"),
                 Task(id: "Dinner"),
-                Task(id: "Protein"),
-                Task(id: "Exercise")] // Default content
+                Task(id: "Exercise"),
+                Task(id: "Water")] // Default content
         }
         
         if (defaults.object(forKey: "CurrentStreak") == nil) {

@@ -17,29 +17,32 @@ class TaskManager {
     
     // Saves class values to userdefaults
     static func save() {
-        var tempDict: [String:Bool] = [:]
+        var temp: [(String, Bool)] = []
         for task in tasks {
-            tempDict[task.id] = task.isComplete
+            temp.append((task.id, task.isComplete))
         }
-        defaults.set(tempDict, forKey: "TaskManager")
+        defaults.set(try! PropertyListEncoder().encode(tasks), forKey: "TaskManager")
         defaults.set(lastCompleted, forKey: "LastCompletedDate")
         defaults.set(Date(), forKey: "LastAccessedDate")
     }
     
     // Loads saved values to class
     static func load() {
-        guard let tempDict = defaults.dictionary(forKey: "TaskManager") else {return}
-        for (name, value) in tempDict {
-            tasks.append(Task(id: name, isComplete: value as! Bool))
+        if let temp = UserDefaults.standard.data(forKey: "TaskManager") {
+            tasks = try! PropertyListDecoder().decode([Task].self, from: temp)
+            
+            var tempDate = defaults.object(forKey: "LastCompletedDate")
+            if (tempDate != nil) {
+                lastCompleted = tempDate as! Date
+            }
+            tempDate = defaults.object(forKey: "LastAccessedDate")
+            if (tempDate != nil) {
+                lastAccessed = tempDate as! Date
+            }
+        } else {
+            return
         }
-        var tempDate = defaults.object(forKey: "LastCompletedDate")
-        if (tempDate != nil) {
-            lastCompleted = tempDate as! Date
-        }
-        tempDate = defaults.object(forKey: "LastAccessedDate")
-        if (tempDate != nil) {
-            lastAccessed = tempDate as! Date
-        }
+        
     }
     
     // Unchecks all tasks in the list
