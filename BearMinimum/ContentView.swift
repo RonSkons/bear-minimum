@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AVKit
+import ConfettiSwiftUI
 
 struct ContentView: View {
     @State var tasks = TaskManager.tasks
@@ -48,8 +49,7 @@ struct ContentView: View {
             }
             
             if  completeStatus {
-                Text("All done! Yippee!!!!")
-                Text("Come back tomorrow :)")
+                Text("All done! Congratulations.")
                     .onAppear {
                         if (!Calendar.current.isDateInToday(TaskManager.lastCompleted)) { // If a day has passed since last completed
                             dayCount += 1
@@ -65,9 +65,10 @@ struct ContentView: View {
             Text("Current Streak: " + String(dayCount) + " days.")
                 .padding()
                 .font(.system(size: 20, weight: .bold, design: .default))
+                .confettiCannon(counter: $dayCount, num: 130, colors: [.orange, .yellow, .white, .brown], rainHeight: 1500, radius: 550)
             Spacer()
         }
-        .background(completeStatus ? .yellow.opacity(0.4) : .white) // Fade to yellow when all tasks are done
+        .background(completeStatus ? .yellow.opacity(0.35) : .white) // Fade to yellow when all tasks are done
         .animation(.easeInOut, value: completeStatus)
         .onAppear(){
             // Initialize audio players

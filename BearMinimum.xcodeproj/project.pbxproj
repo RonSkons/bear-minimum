@@ -14,6 +14,7 @@
 		46992F692955804A00BA442B /* BearImageCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46992F682955804A00BA442B /* BearImageCircle.swift */; };
 		46B405AF29596B230071133D /* Yipee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46B405AD29596B230071133D /* Yipee.mp3 */; };
 		46B405B1295ABD550071133D /* Success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46B405B0295ABD550071133D /* Success.mp3 */; };
+		46F850AF29599452001AB6FB /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 46F850AE29599452001AB6FB /* ConfettiSwiftUI */; };
 		46FF13892955AA7E006731FB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF13882955AA7E006731FB /* Task.swift */; };
 		46FF138B2955AAFC006731FB /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF138A2955AAFC006731FB /* TaskManager.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F850AF29599452001AB6FB /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +143,9 @@
 			dependencies = (
 			);
 			name = BearMinimum;
+			packageProductDependencies = (
+				46F850AE29599452001AB6FB /* ConfettiSwiftUI */,
+			);
 			productName = BearMinimum;
 			productReference = 46992F3929557AD700BA442B /* BearMinimum.app */;
 			productType = "com.apple.product-type.application";
@@ -213,6 +218,9 @@
 				Base,
 			);
 			mainGroup = 46992F3029557AD700BA442B;
+			packageReferences = (
+				46F850AD29599452001AB6FB /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = 46992F3A29557AD700BA442B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -432,6 +440,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RonSkons.BearMinimum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,6 +472,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RonSkons.BearMinimum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,6 +597,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46F850AD29599452001AB6FB /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46F850AE29599452001AB6FB /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46F850AD29599452001AB6FB /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 46992F3129557AD700BA442B /* Project object */;
 }
